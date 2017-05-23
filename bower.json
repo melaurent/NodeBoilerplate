@@ -1,0 +1,25 @@
+{
+  "name": "?",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "?"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tether": "^1.4.0",
+    "vue": "^2.2.4",
+    "bootstrap": "v4.0.0-alpha.6",
+    "jquery": "^3.2.0",
+    "socket.io-client": "^1.7.2"
+  }
+}
