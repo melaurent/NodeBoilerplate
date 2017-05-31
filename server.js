@@ -11,7 +11,7 @@ var db = null
 //TOFILL
 var mongo_url = ""
 
-app.use(express.static(dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 //Heroku config
 if (typeof process.env.PORT == 'undefined') {
@@ -21,8 +21,6 @@ if (typeof process.env.PORT == 'undefined') {
 }
 
 mongo.connect(mongo_url, function(err, mdb) {
-   assert.equal(null, err);
    console.log("connected to db");
    db = mdb;
-   startListening();
 });
